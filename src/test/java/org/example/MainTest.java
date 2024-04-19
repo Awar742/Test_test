@@ -19,10 +19,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 class MainTest {
-    public static final String UserID = "mngr566819";
-    public static final String Password  = "ezyjUqE";
-    public static final String CustomerID = "14636";
-    public static final String Version = "V2";
+    public static final String USERID = "mngr566819";
+    public static final String PASSWORD  = "ezyjUqE";
+    public static final String CUSTOMERID = "14636";
+    public static final String VERSION = "V2";
     public static final String EXPECTED_TITLE = "GTPL Bank Edit Customer Entry Page";
    private static ChromeDriver chromeDriver;
     private static WebDriverWait wait;
@@ -40,17 +40,17 @@ class MainTest {
     }
     @Test
     void EmptyAddress() throws InterruptedException {
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/index.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/index.php");
 
         var searchBox = chromeDriver.findElement(By.name("uid"));
-        searchBox.sendKeys(UserID);
+        searchBox.sendKeys(USERID);
         searchBox = chromeDriver.findElement(By.name("password"));
-        searchBox.sendKeys(Password);
+        searchBox.sendKeys(PASSWORD);
         searchBox = chromeDriver.findElement(By.name("btnLogin"));
         searchBox.click();
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/webpages/EditCustomer.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/webpages/EditCustomer.php");
         searchBox = chromeDriver.findElement(By.name("cusid"));
-        searchBox.sendKeys(CustomerID);
+        searchBox.sendKeys(CUSTOMERID);
         searchBox = chromeDriver.findElement(By.name("AccSubmit"));
         searchBox.click();
 
@@ -68,17 +68,17 @@ class MainTest {
     }
     @Test
     void EmptyFirstCharOfAddress() throws InterruptedException {
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/index.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/index.php");
 
         var searchBox = chromeDriver.findElement(By.name("uid"));
-        searchBox.sendKeys(UserID);
+        searchBox.sendKeys(USERID);
         searchBox = chromeDriver.findElement(By.name("password"));
-        searchBox.sendKeys(Password);
+        searchBox.sendKeys(PASSWORD);
         searchBox = chromeDriver.findElement(By.name("btnLogin"));
         searchBox.click();
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/webpages/EditCustomer.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/webpages/EditCustomer.php");
         searchBox = chromeDriver.findElement(By.name("cusid"));
-        searchBox.sendKeys(CustomerID);
+        searchBox.sendKeys(CUSTOMERID);
         searchBox = chromeDriver.findElement(By.name("AccSubmit"));
         searchBox.click();
 
@@ -96,17 +96,17 @@ class MainTest {
     }
     @Test
     void SpecialFirstCharOfAddress() throws InterruptedException {
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/index.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/index.php");
 
         var searchBox = chromeDriver.findElement(By.name("uid"));
-        searchBox.sendKeys(UserID);
+        searchBox.sendKeys(USERID);
         searchBox = chromeDriver.findElement(By.name("password"));
-        searchBox.sendKeys(Password);
+        searchBox.sendKeys(PASSWORD);
         searchBox = chromeDriver.findElement(By.name("btnLogin"));
         searchBox.click();
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/webpages/EditCustomer.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/webpages/EditCustomer.php");
         searchBox = chromeDriver.findElement(By.name("cusid"));
-        searchBox.sendKeys(CustomerID);
+        searchBox.sendKeys(CUSTOMERID);
         searchBox = chromeDriver.findElement(By.name("AccSubmit"));
         searchBox.click();
 
@@ -124,17 +124,17 @@ class MainTest {
     }
     @Test
     void SpecialFirstCharOfCity() throws InterruptedException {
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/index.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/index.php");
 
         var searchBox = chromeDriver.findElement(By.name("uid"));
-        searchBox.sendKeys(UserID);
+        searchBox.sendKeys(USERID);
         searchBox = chromeDriver.findElement(By.name("password"));
-        searchBox.sendKeys(Password);
+        searchBox.sendKeys(PASSWORD);
         searchBox = chromeDriver.findElement(By.name("btnLogin"));
         searchBox.click();
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/webpages/EditCustomer.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/webpages/EditCustomer.php");
         searchBox = chromeDriver.findElement(By.name("cusid"));
-        searchBox.sendKeys(CustomerID);
+        searchBox.sendKeys(CUSTOMERID);
         searchBox = chromeDriver.findElement(By.name("AccSubmit"));
         searchBox.click();
 
@@ -152,17 +152,17 @@ class MainTest {
     }
     @Test
     void EmptyCity() throws InterruptedException {
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/index.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/index.php");
 
         var searchBox = chromeDriver.findElement(By.name("uid"));
-        searchBox.sendKeys(UserID);
+        searchBox.sendKeys(USERID);
         searchBox = chromeDriver.findElement(By.name("password"));
-        searchBox.sendKeys(Password);
+        searchBox.sendKeys(PASSWORD);
         searchBox = chromeDriver.findElement(By.name("btnLogin"));
         searchBox.click();
-        chromeDriver.get("https://demo.guru99.com/"+Version+"/webpages/EditCustomer.php");
+        chromeDriver.get("https://demo.guru99.com/"+VERSION+"/webpages/EditCustomer.php");
         searchBox = chromeDriver.findElement(By.name("cusid"));
-        searchBox.sendKeys(CustomerID);
+        searchBox.sendKeys(CUSTOMERID);
         searchBox = chromeDriver.findElement(By.name("AccSubmit"));
         searchBox.click();
 
