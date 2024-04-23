@@ -141,6 +141,7 @@ class MainTest {
         alert.accept();
     }
 
+
     @AfterEach
     void tearDown() {
         chromeDriver.quit();
